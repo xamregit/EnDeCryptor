@@ -1,0 +1,21 @@
+﻿<Window x:Class="EnDeCryptor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EnDeCryptor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Button x:Name="EncryptButton" Content="Зашифровать" HorizontalAlignment="Left" Margin="133,142,0,0" VerticalAlignment="Top" Height="35" Width="128" Click="EncryptButton_Click"/>
+        <TextBox x:Name="OriginalText" HorizontalAlignment="Left" Margin="141,71,0,0" Text="Привет" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Encrypted" HorizontalAlignment="Left" Margin="483,71,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="Decrypted" HorizontalAlignment="Left" Margin="363,269,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="DecryptButton" Content="Расшифровать" HorizontalAlignment="Left" Margin="469,134,0,0" VerticalAlignment="Top" Height="51" Width="148" Click="DecryptButton_Click"/>
+        <ComboBox x:Name="CyphersList" SelectedIndex="0"  HorizontalAlignment="Left" Margin="96,253,0,0" VerticalAlignment="Top" Width="120" Height="25">
+            <TextBlock>Шифр Цезаря</TextBlock>
+            <TextBlock>Атбаш</TextBlock>
+        </ComboBox>
+
+    </Grid>
+</Window>
